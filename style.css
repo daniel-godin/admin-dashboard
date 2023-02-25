@@ -54,21 +54,43 @@ body {
 
 .nav-link-container {
     display: grid;
-    gap: 10px;
+    row-gap: 10px;
 }
-
-
-
-
 
 .header-container {
     background-color: yellow;
     border: 1px solid black;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
+
+.search-bar-container {
+    border: 1px solid red;
+    grid-row: 1 / 2;
+}
+
+.user-greeting-container {
+    border: 1px solid yellow;
+    grid-row: 1 / 2;
+}
+
+.user-greeting-container {
+    border: 1px solid orange;
+    grid-row: 2 / 3;
+}
+
+.buttons-container {
+    border: 1px solid purple;
+    grid-row: 2 / 3;
+}
+
+
 
 .main-content-container {
     background-color: white;
     border: 1px solid black;
     grid-area: 2 / 2 / 3 / 3;
+    
 }
+
