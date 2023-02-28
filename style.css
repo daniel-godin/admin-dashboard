@@ -1,8 +1,9 @@
 :root {
+    font-size: 16px;
     /* Variables: */
     --sidebar-background-color: rgb(14, 165, 233);
     --buttons-background-color: rgb(14, 165, 233);
-
+    --font-family: 'Roboto Flex';
 }
 
 @font-face {
@@ -33,7 +34,7 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(200px, 250px) 4fr;
     grid-template-rows: 1fr 4fr;
     background-color: grey;
 }
@@ -41,36 +42,52 @@ body {
 .sidebar-container {
     grid-area: 1 / 1 / 3 / 2;
     background-color: var(--sidebar-background-color);
-    padding: 10px;
+    padding: 20px;
     display: grid;
     row-gap: 50px;
     align-items: start;
     align-content: start;
+    font-family: var(--font-family);
 }
 
 .logo-container {
-    border: 1px solid red;
     display: flex;
     gap: 10px;
     align-items: center;
+    font-size: 1.75rem;
+    font-weight: 500;
 }
 
 .nav-container {
-    border: 1px solid green;
-
+    
 }
 
+.profile-link-container {
+    
+}
 
+.nav-container,
+.profile-link-container {
+    display: grid;
+    gap: 15px;
+}
 
 .nav-link-container {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .icon {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
+}
+
+.large {
+    height: 40px;
+    width: 40px;
 }
 
 .sidebar-container div > p {
@@ -78,7 +95,7 @@ body {
 }
 
 .header-container {
-    background-color: yellow;
+    background-color: white;
     border: 1px solid black;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
@@ -90,9 +107,7 @@ body {
     grid-row: 1 / 2;
 }
 
-.profile-link-container {
-    border: 1px solid brown;
-}
+
 
 .user-greeting-container {
     border: 1px solid yellow;
@@ -112,11 +127,12 @@ body {
 
 
 .main-content-container {
-    background-color: white;
+    background-color: lightgrey;
     border: 1px solid black;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: 1fr 200px;
+    padding: 20px;
 }
 
 .projects-container {
@@ -135,6 +151,7 @@ body {
     border: 1px solid red;
     height: 100px;
     width: 150px;
+    background-color: white;
 }
 
 .project-card-actions {
