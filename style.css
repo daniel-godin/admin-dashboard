@@ -166,6 +166,10 @@ body {
     border-radius: 50%;
 }
 
+.greeting-container {
+    align-self: center;
+}
+
 .greeting-container > p:first-child {
     font-weight: 500;
     font-size: 0.8rem;
