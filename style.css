@@ -40,7 +40,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: minmax(215px, 250px) 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto-fit 1fr;
     background-color: grey;
 }
 
@@ -103,8 +103,10 @@ body {
     background-color: var(--color-card-background-color);
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr;
+    padding: 5px 25px 5px 25px;
+    gap: 10px;
 }
 
 .search-bar-container {
@@ -112,7 +114,6 @@ body {
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
-    padding: 15px;
     align-items: center;
 }
 
@@ -130,16 +131,12 @@ body {
 
 .user-info-container {
     grid-row: 1 / 2;
-    padding: 20px;
     font-weight: 600;
     font-size: 1.1rem;
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 1.5rem;
-    /* Need to fix this later. */
-    /* Trying Grid Version */
-    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: end;
     align-items: center; */
@@ -157,11 +154,11 @@ body {
 
 .user-greeting-container {
     grid-row: 2 / 3;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: start;
-    align-items: center;
+
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    justify-content: center;
+    align-content: center;
 
 }
 
@@ -185,9 +182,6 @@ body {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-    padding: 20px;
-    
 }
 
 button {
