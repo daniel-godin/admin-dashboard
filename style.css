@@ -310,7 +310,8 @@ button {
 }
 
 hr {
-    
+    border: 0.5px solid var(--color-form-background-and-project-background);
+    margin: 20px 0px 20px 0px;
 }
 
 .annoucement-header {
