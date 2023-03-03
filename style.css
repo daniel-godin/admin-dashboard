@@ -7,7 +7,10 @@
     --color-user-icon-background-color: rgba(250,204,21,255);
     --color-project-card-accent-color-start: rgba(240,180,41,255);
     --color-project-card-accent-color-end: rgba(243,201,104,255);
+    --color-card-background-color: rgba(255, 255, 255, 1);
     --font-family: 'Roboto Flex';
+    --cards-border-radius: 10px;
+    --cards-box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 @font-face {
@@ -127,6 +130,7 @@ body {
 
 .user-info-container {
     grid-row: 1 / 2;
+    padding: 20px;
     font-weight: 600;
     font-size: 1.1rem;
     display: flex;
@@ -175,11 +179,6 @@ body {
     font-size: 1.25rem;
 }
 
-
-
-
-
-
 .buttons-container {
     grid-row: 2 / 3;
     display: grid;
@@ -203,13 +202,12 @@ button {
 
 }
 
-
 .main-content-container {
     background-color: var(--color-form-background-and-project-background);
     border: 1px solid black;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 225px;
     grid-template-rows: 1fr;
     padding: 20px;
     gap: 20px;
@@ -262,8 +260,10 @@ button {
 }
 
 .announcement-previews-container {
-    border: 1px solid coral;
-    padding: 20px;
+    background-color: var(--color-card-background-color);
+    border-radius: var(--cards-border-radius);
+    box-shadow: var(--cards-box-shadow);
+    padding: 25px;
 
 
 }
