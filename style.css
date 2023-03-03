@@ -107,6 +107,8 @@ body {
     grid-template-columns: 1fr minmax(300px, 350px);
     padding: 5px 25px 5px 25px;
     gap: 10px;
+    position: relative;
+    box-shadow: var(--cards-box-shadow);
 }
 
 .search-bar-container {
